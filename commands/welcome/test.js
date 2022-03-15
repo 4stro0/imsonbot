@@ -25,12 +25,7 @@ let tnail = nail.replace(/`?\?useravatar`?/g, message.author.displayAvatarURL({ 
 
   const embed = new Discord.MessageEmbed()
 .setTitle(`Welcome to ${message.guild.name}`)
-.setDescription(`${mes} 
-
-**Down message only visible for testing command**
-To add more features join our official server and ask help from developers. 
-[Join Server](https://discord.gg/gU7XAxTpX5)
- `)
+.setDescription(`${mes}`)
 .setColor("RANDOM")
 .setImage(img)
 .setThumbnail(tnail)
