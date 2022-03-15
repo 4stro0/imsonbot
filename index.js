@@ -169,6 +169,7 @@ require('http').createServer((req, res) => res.end(`
 
 client.on("ready", () => {
    client.user.setStatus("dnd"); // You can change it to online, dnd, idle
+   client.user.setActivity('Imson Store', { type: 'WATCHING' })
 
  console.log(`Successfully logined as ${client.user.tag} `)
 });
@@ -178,4 +179,4 @@ client.on("ready", () => {
 // client.user.setActivity(`Chilling with owner`, { type:         "STREAMING",
 // url: "https://www.twitch.tv/nocopyrightsounds"})});
 
-client.login(process.env.TOKEN);
+client.login('OTUxNzIyNTE1MDk5NzA1MzU0.YirmqQ.kN4zA6hWRqVobK5VaKXUkWh787g');
