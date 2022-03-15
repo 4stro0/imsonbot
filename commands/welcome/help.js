@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const { prefix, developerID } = require("../../config.json")
 module.exports = {
-  name: "help",
+  name: "helpwelcom",
   description:
     "Get list of all command and even get to know every command detials",
   usage: "help <cmd>",
