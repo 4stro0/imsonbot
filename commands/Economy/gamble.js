@@ -25,9 +25,9 @@ run: async (client, message, args) => {
     
     var items = [0 , pilihan*2];
         if(random_item(items) === 0) return message.reply(`Kamu Kalah dengan gweh , sisa koin lo ${await client.eco.balance.fetch(message.author.id , message.guild.id)}`)
+        client.eco.balance.add(random_item(items) , message.author.id , message.guild.id)
         message.reply(`Lu Menang Coy , Uang Lu Sekarang ${await client.eco.balance.fetch(message.author.id , message.guild.id)}`);
 
-        client.eco.balance.add(random_item(items) , message.author.id , message.guild.id)
     
  }
 }

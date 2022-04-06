@@ -8,7 +8,7 @@ client.on("ready", () => {
     // penanda
     console.log(`${client.user.tag} is up and ready to go!`)
     // set activity
-    client.user.setActivity('/help' , { type: 'PLAYING' })
+    client.user.setActivity('+help' , { type: 'PLAYING' })
 
     economy.setConfig({
         mongoURL: "mongodb+srv://RoshanGamer:public@cluster0.kyoy7.mongodb.net/Public1?retryWrites=true&w=majority",
