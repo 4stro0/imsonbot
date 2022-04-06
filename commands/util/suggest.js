@@ -16,6 +16,7 @@ run: async (client, message, args) => {
      const embed = new MessageEmbed()
         .setTitle(`From ${message.author.tag}`)
         .setDescription(suggest)
+        message.reply(`Suggested! check <#961374623155507320>`)
     
         const msw = await channel.send(embed)
 
