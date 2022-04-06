@@ -10,17 +10,13 @@ description : 'Suggestikan Ide Gila Mu!!',
 */
 run: async (client, message, args) => {
     const channel = client.channels.cache.get("961374623155507320")
-    const suggest = args.join(" ")
-    if(!suggest) return message.reply('Masukan Suggesti Anda')
+    const suggest =  args.join(" ")
+    if(!suggest) return message.reply('Masukan Ide Mu!')
 
-     const embed = new MessageEmbed()
-        .setTitle(`From ${message.author.tag}`)
-        .setDescription(suggest)
-        message.reply(`Suggested! check <#961374623155507320>`)
+   
     
-        const msw = await channel.send(embed)
-
-        msw.react('👍')
-        msw.react('👎')
+      const send = await   channel.send(`----------------------- \nNew Suggestion!! \n -------------------------\n  \`${suggest}\`\n\n~${message.author}`)
+      send.react('👍')
+      send.react('👎')
 }
 }
