@@ -10,7 +10,7 @@ description : 'Suggestikan Ide Gila Mu!!',
 */
 run: async (client, message, args) => {
     const channel = client.channels.cache.get("961374623155507320")
-    const suggest = args.join("")
+    const suggest = args.join(" ")
     if(!suggest) return message.reply('Masukan Suggesti Anda')
 
      const embed = new MessageEmbed()
