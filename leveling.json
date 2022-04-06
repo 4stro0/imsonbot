@@ -1,0 +1,60 @@
+{
+	"960111492521398342": {
+		"773088145071276074": {
+			"userData": {
+				"id": "773088145071276074",
+				"username": "naughtysd",
+				"tag": "naughtysd#4680",
+				"discriminator": "4680"
+			},
+			"xp": 1150,
+			"totalXP": 3100,
+			"multiplier": 1,
+			"level": 11,
+			"maxXP": 30300,
+			"difference": 29200
+		},
+		"951329909073117224": {
+			"userData": {
+				"id": "951329909073117224",
+				"username": "ImSon",
+				"tag": "ImSon#0001",
+				"discriminator": "0001"
+			},
+			"xp": 3050,
+			"totalXP": 4050,
+			"multiplier": 1,
+			"level": 1000000001,
+			"maxXP": 3000000000300,
+			"difference": 2999999997300
+		},
+		"794565667831021606": {
+			"userData": {
+				"id": "794565667831021606",
+				"username": "DevlinGans",
+				"tag": "DevlinGans#9797",
+				"discriminator": "9797"
+			},
+			"xp": 900,
+			"totalXP": 1900,
+			"multiplier": 1,
+			"level": 3,
+			"maxXP": 900,
+			"difference": 50
+		},
+		"694591384409079908": {
+			"userData": {
+				"id": "694591384409079908",
+				"username": "DezanTopia",
+				"tag": "DezanTopia#4478",
+				"discriminator": "4478"
+			},
+			"xp": 200,
+			"totalXP": 1200,
+			"multiplier": 1,
+			"level": 3,
+			"maxXP": 900,
+			"difference": 750
+		}
+	}
+}
