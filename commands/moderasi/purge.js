@@ -9,6 +9,7 @@ description : 'Delete Message',
 * @param {String[]} args
 */
 run: async (client, message, args) => {
+    if(!message.member.permissions.has('MANAGE_MESSAGE')) return message.reply('Kamu Tidak Bisa Menggunakan Command Ini!')
     const amount = args[0]
 
     if (isNaN(amount)) return message.reply('Enter The Number')
