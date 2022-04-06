@@ -13,7 +13,7 @@ run: async (client, message, args) => {
     const suggest = args.join("")
     if(!suggest) return message.reply('Masukan Suggesti Anda')
 
-     const embed = new Discord.MessageEmbed()
+     const embed = new MessageEmbed()
         .setTitle(`From ${message.author.tag}`)
         .setDescription(suggest)
     
