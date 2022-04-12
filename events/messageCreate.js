@@ -6,12 +6,24 @@ client.on("messageCreate", async (message) => {
     const badword = await db.get('badword' , message.content)
     const owner = client.channels.cache.get('951420963822641162')
     if (
-        message.author.bot ||
-        !message.guild ||
-        !message.content.toLowerCase().startsWith(client.config.prefix)
-    )
-        return;
-        if(message.author.id === banneduser) return message.reply('You Has Been Banned From The Bot , You Cannot Use The Command Forever !!')
+        message.author.bot 
+        
+    ) return;
+    if(db.has(`afk-${message.author.id}+${message.guild.id}`)) {
+        const info = db.get(`afk-${message.author.id}+${message.guild.id}`)
+        await db.delete(`afk-${message.author.id}+${message.guild.id}`)
+        message.reply(`Status Afk Mu telah dihapus (${info})`)
+    }
+    //checking for mentions
+    if(message.mentions.members.first()) {
+        if(db.has(`afk-${message.mentions.members.first().id}+${message.guild.id}`)) {
+            message.channel.send(message.mentions.members.first().user.tag + " Sedang Afk " + " : " + "**" + db.get(`afk-${message.mentions.members.first().id}+${message.guild.id}`) + "**" )
+        }else return;
+    }else 
+
+
+        if(!message.guild ||
+            !message.content.toLowerCase().startsWith(client.config.prefix)) return;
       
         
 
