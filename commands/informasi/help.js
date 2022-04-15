@@ -35,7 +35,7 @@ module.exports = {
         });
         const embed = new MessageEmbed()
         .setTitle('Help Commands')
-        .setDescription('**Prefix Ku**: `+`\n\n`Pilih Kategori Command Untuk Dilihat Info Nya`')
+        .setDescription('**Prefix Ku**: `+`\n\n`Pilih Kategori Command Untuk Dilihat Info Nya`\n\nOYAAA! Akhir-akhir ini owner mendengar bumi kita sedang mengalami pemanasan global. Yuk kita bantu dengan mendonasikan pohon! Dan ini gratis, kalian hanya download apk ecoasia atau link ini http://ecosia.co/mobile_ft_android?referer=tt%3D terimakasih sudah membantu bumi kita dari pemanasan global!,')
         .setThumbnail('https://cdn.discordapp.com/attachments/960360393669214299/960365170373328926/20220404_092802.jpg')
         .setColor('#030306')
 
@@ -57,7 +57,6 @@ module.exports = {
             ),
                 ]
         const initialMessage = await message.reply({
-            content: "OYAAA! Akhir-akhir ini owner mendengar bumi kita sedang mengalami pemanasan global. Yuk kita bantu dengan mendonasikan pohon! Dan ini gratis, kalian hanya download apk ecoasia atau link ini http://ecosia.co/mobile_ft_android?referer=tt%3D terimakasih sudah membantu bumi kita dari pemanasan global!",
             embeds: [embed],
             components: components(false)
         });
