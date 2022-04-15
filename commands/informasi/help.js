@@ -57,6 +57,7 @@ module.exports = {
             ),
                 ]
         const initialMessage = await message.reply({
+            content: "OYAAA! Akhir-akhir ini owner mendengar bumi kita sedang mengalami pemanasan global. Yuk kita bantu dengan mendonasikan pohon! Dan ini gratis, kalian hanya download apk ecoasia atau link ini http://ecosia.co/mobile_ft_android?referer=tt%3D terimakasih sudah membantu bumi kita dari pemanasan global!",
             embeds: [embed],
             components: components(false)
         });
