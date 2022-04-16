@@ -14,10 +14,8 @@ run: async (client, message, args) => {
             new MessageEmbed()
             .setTitle('Update')
             .addFields([
-                { name: '1.Afk' , value: 'Memperlihatkan Informasi Anime' },
-                { name: "2.botinfo" , value: "Memperlihatkan Informasi Dari Bot" },
-                { name: "3.rules" , value: "Memperlihatkan Rules Dari Server" },
-                { name: "4.Donate" , value: "donate owner"}
+                { name: '1.how' , value: 'Seberapa?' },
+                { name: "2.when" , value: "Kapan hal itu terjadi?" },
             ])
         ]
     })
