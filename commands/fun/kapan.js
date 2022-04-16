@@ -1,6 +1,6 @@
 const { Message, Client , MessageEmbed , MessageActionRow ,  MessageButton } = require('discord.js')
 module.exports = {
-name: 'when', 
+name: 'kapan', 
 description : 'Kapan itu terjadi?',
 /**
 *
