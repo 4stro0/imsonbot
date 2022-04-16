@@ -14,8 +14,8 @@ run: async (client, message, args) => {
             new MessageEmbed()
             .setTitle('Update')
             .addFields([
-                { name: '1.how' , value: 'Seberapa?' },
-                { name: "2.when" , value: "Kapan hal itu terjadi?" },
+                { name: '1.seberapa' , value: 'Seberapa?' },
+                { name: "2.kapan" , value: "Kapan hal itu terjadi?" },
                 { name: '3.apakah', value : "apakah akan terjadi?" }
             ])
         ]
