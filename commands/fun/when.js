@@ -17,7 +17,7 @@ run: async (client, message, args) => {
         return segini[Math.floor(Math.random()*segini.length)];
              
     }
-    const segini = ["nanti" , "besok" , "gatau" , "bentar lagi" , "gak akan pernah" , "gak akan terjadi" , "yo ndak tau kok tanya saya" , "ntah", "kiamat mungkin" , "tanya sama dukun", "minggu depan" , "100 tahun lagi" , "bulan depan" , "tahun depan"]
+    const segini = ["nanti" , "besok" , "gatau" , "bentar lagi" , "gak akan pernah" , "gak akan terjadi" , "yo ndak tau kok tanya saya" , "ntah", "kiamat mungkin" , "tanya sama dukun", "minggu depan" , "100 tahun lagi" , "bulan depan" , "tahun depan" , "ntahlah mungkin gak akan" , "gaatau mungkin gaakan aowkaow" , "bentar lagi , tapi tak mungkin" , "tanya terus , gw aja nebak" , "besok , begini tanggapan lesti kejora" , "hmmmm besok?" , "gatau sih ntar kecewa lu ma jawaban gw" , "gatauuuuu" , "afh iyh cuy 😅" , "yanh benerjh 😅" ]
     message.reply(random_item(segini))
     
 }
