@@ -10,9 +10,9 @@ description : 'Seberapa?',
 */
 run: async (client, message, args) => {
     const apa = args.join(" ")
-    if(!apa) return message.reply('+how [hal yang diperhitungkan] [siapa]')
+    if(!apa) return message.reply('+how [hal yang diperhitungkan]')
     const mention = message.mentions.members.first() || message.author
     const gay = Math.floor(Math.random() * 100)
-    message.reply(`${mention} Dia ${gay} ${apa}`)
+    message.reply(`${mention} Dia ${gay}% ${apa}`)
 }
 }
