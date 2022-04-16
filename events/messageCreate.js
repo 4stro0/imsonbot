@@ -42,7 +42,14 @@ client.on("messageCreate", async (message) => {
         await command.run(client, message, args);
 
     } catch (error) {
-        console.log(error)
+        message.reply({
+            embeds : [
+                new discord.MessageEmbed()
+                .setTitle('Auto Reporter Bug')
+                .setDescription(`\```${error}\```\n\nCommands : ${message.content}\n Dari User : ${message.author}`)
+                .setTimestamp()
+            ]
+        })
     }
     //xp leveling
 
