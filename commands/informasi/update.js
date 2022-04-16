@@ -16,6 +16,7 @@ run: async (client, message, args) => {
             .addFields([
                 { name: '1.how' , value: 'Seberapa?' },
                 { name: "2.when" , value: "Kapan hal itu terjadi?" },
+                { name: '3.apakah', value : "apakah akan terjadi?" }
             ])
         ]
     })

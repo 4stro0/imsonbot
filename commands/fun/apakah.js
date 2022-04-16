@@ -17,7 +17,7 @@ run: async (client, message, args) => {
         return segini[Math.floor(Math.random()*segini.length)];
              
     }
-    const segini = ['mungkin' , "iya" , "gatau" , "gak bakal"]
+    const segini = ['mungkin' , "iya" , "gatau" , "gak"]
     message.reply(random_item(segini))
     
 }
